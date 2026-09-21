@@ -1,0 +1,9 @@
+{
+  "name": "soratlas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Un portale statico su Lucifero, Arimane e Sorat nell'antroposofia di Rudolf Steiner.",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
