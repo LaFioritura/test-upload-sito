@@ -1,30 +1,48 @@
 # Soratlas
 
-Un portale aperto sulla cosmologia di Rudolf Steiner riguardo Lucifero, Arimane e Sorat — con le epoche della coscienza, la triarticolazione sociale, il doppio arimanico, la ricezione critica accademica e i confronti con altre tradizioni.
+Un portale aperto sull'antroposofia di Rudolf Steiner: non solo Lucifero, Arimane e Sorat, ma la sua biografia e il suo metodo, la cosmologia dell'evoluzione umana, le applicazioni pratiche (pedagogia, agricoltura, medicina, arti), la vita sociale, e infine la ricezione critica accademica e i confronti con altre tradizioni.
 
-Sito statico, nessun framework, nessuna build. HTML e CSS puri: apri `index.html` in un browser e funziona.
+Sito statico, nessun framework, nessuna build. HTML e CSS puri: apri `index.html` in un browser e funziona. 24 pagine di contenuto, ciascuna autosufficiente con le proprie fonti.
 
 ## Struttura
 
 ```
 soratlas/
-├── index.html            portale: diagramma + indice di tutte le pagine
-├── pages/                una pagina per argomento
+├── index.html                          portale: diagramma + indice di tutte le pagine
+├── pages/
+│   │  vita e metodo
 │   ├── antroposofia.html
+│   ├── metodo-goethiano.html
+│   ├── teosofia-scissione.html
+│   ├── cronologia.html
+│   │  cosmologia
 │   ├── costituzione.html
 │   ├── epoche.html
+│   ├── karma.html
+│   ├── soglia.html
+│   ├── cristo-golgota.html
+│   │  le tre potenze
 │   ├── triplicita.html
 │   ├── sorat.html
 │   ├── michele.html
 │   ├── doppio.html
-│   ├── karma.html
-│   ├── soglia.html
+│   ├── fondazione-meditazione.html
+│   │  le arti e la pratica
+│   ├── pedagogia-waldorf.html
+│   ├── agricoltura-biodinamica.html
+│   ├── medicina-antroposofica.html
+│   ├── arti-architettura.html
+│   │  vita sociale
 │   ├── triarticolazione.html
+│   │  ricezione e confronti
 │   ├── ricezione-critica.html
 │   ├── confronti.html
+│   ├── traiettorie-curiose.html
+│   │  riferimenti e chiusura
+│   ├── bibliografia.html
 │   └── conclusione.html
 ├── assets/
-│   └── style.css         un unico foglio di stile condiviso
+│   └── style.css                       un unico foglio di stile condiviso
 └── README.md
 ```
 
