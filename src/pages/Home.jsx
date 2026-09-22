@@ -69,7 +69,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="home-hero">
-        <span className="tag red">an ongoing personal research notebook</span>
+        <span className="tag red">an ongoing research notebook</span>
         <h1 className="huge">A map of correspondences,<br/>kept a little too carefully.</h1>
         <p className="home-lede">
           This is a working notebook, not a finished book. It tracks one recurring pattern across a
@@ -89,7 +89,7 @@ export default function Home() {
 
       <div className="stat-row">
         <div className="stat"><div className="n">26</div><div className="l">entries</div></div>
-        <div className="stat"><div className="n">40+</div><div className="l">primary &amp; secondary sources</div></div>
+        <div className="stat"><div className="n">50+</div><div className="l">primary &amp; secondary sources</div></div>
         <div className="stat"><div className="n">1</div><div className="l">system, mapped from the inside and the outside</div></div>
         <div className="stat"><div className="n">0</div><div className="l">claims taken on faith</div></div>
       </div>

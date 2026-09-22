@@ -57,10 +57,25 @@ export default function Sorat() {
           holding onto exactly because later, looser readings sometimes don't.
         </div>
 
+        <h2>A philological aside</h2>
+        <p>
+          The "Nero" reading Steiner sets himself against is not a strawman — it's the dominant modern
+          scholarly position. Textual critics including R. H. Charles, whose <em>Critical and Exegetical
+          Commentary on the Revelation of St. John</em> (1920) remains a standard reference, derive 666
+          from a Hebrew transliteration of the Greek "Neron Caesar," a reading confirmed by an early
+          manuscript variant that gives 616 instead — the number that results from dropping the final
+          consonant in the Latinized spelling of the same name. Steiner was aware of the Nero reading and
+          rejected it on the grounds that it explains the numbers without explaining why the Apocalypticist
+          would have hidden a living emperor's name in a text about cosmic history at all. Mainstream New
+          Testament scholarship has not adopted Steiner's alternative; it is presented here as his
+          argument, not as a rival philological consensus.
+        </p>
+
         <SeeAlso links={[['/triplicity', 'the mystery of triplicity'], ['/michael', 'Michael and the falling intelligence'], ['/comparisons', 'comparisons and later theories']]} />
         <Sources items={[
           "Rudolf Steiner, <em>Die Apokalypse des Johannes</em> (GA 104, Nuremberg 1908) and <em>Aus der Bilderschrift der Apokalypse des Johannes</em> (GA 104a, Munich 1907).",
           "Rudolf Steiner, <em>Eternal and Transient Elements in Human Life</em>, on the 666-year rhythm and the Gondishapur episode.",
+          "R. H. Charles, <em>A Critical and Exegetical Commentary on the Revelation of St. John</em>, 1920, on the \"Neron Caesar\" gematria of 666.",
         ]} />
       </article>
     </Layout>

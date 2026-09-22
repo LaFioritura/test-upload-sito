@@ -47,10 +47,26 @@ export default function TheosophySplit() {
           organizational history rather than doctrine.
         </p>
 
+        <h2>What happened to Krishnamurti</h2>
+        <p>
+          Krishnamurti's own trajectory after 1929 is worth a moment, because it runs, almost by
+          coincidence, along the same logic. Mary Lutyens — a childhood friend, and later his official
+          biographer, in a multi-volume life beginning with <em>Krishnamurti: The Years of Awakening</em>
+          (1975) — documents how thoroughly he rejected not just the specific role assigned to him but the
+          entire machinery of guru and disciple: he spent the following six decades lecturing across the
+          world on the position that organized belief of any kind, including the one built around himself,
+          gets in the way of direct insight. Neither Steiner's break with Theosophy in 1913 nor
+          Krishnamurti's break with his own cult in 1929 argues that spiritual authority is illegitimate in
+          general — both men kept teaching for the rest of their lives. What both rejected, on record, was
+          the idea that authority could be transmitted rather than earned individually, lecture by lecture,
+          exercise by exercise.
+        </p>
+
         <SeeAlso links={[['/anthroposophy', 'a life and a method'], ['/goethean-method', 'the Goethean root'], ['/timeline', 'timeline']]} />
         <Sources items={[
           "Biographical chronology of Rudolf Steiner and the founding of the Anthroposophical Society, 1902–1913.",
           "Historical material on the Theosophical Society, Annie Besant, and Jiddu Krishnamurti, 1912–1929.",
+          "Mary Lutyens, <em>Krishnamurti: The Years of Awakening</em>, 1975.",
         ]} />
       </article>
     </Layout>

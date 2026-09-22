@@ -57,12 +57,29 @@ export default function Reception() {
           civilizations and religious traditions — has a right to know this side of its reception too.
         </p>
 
+        <h2>The wider academic picture</h2>
+        <p>
+          Staudenmaier and Ruse are the two names most likely to come up in a heated argument about
+          Steiner, but they're not the only serious scholars who have written about him. Helmut Zander's
+          <em> Rudolf Steiner: Die Biografie</em> (2011) situates Steiner's cosmology inside the specific
+          intellectual culture of fin-de-siècle Vienna, Weimar, and Berlin, arguing that much of what
+          anthroposophists present as independently verified spiritual research can be traced, source by
+          source, to theosophical and occult literature Steiner had read. Corinna Treitel's <em>A Science
+          for the Soul</em> (2004) widens the lens further, treating Steiner as one prominent figure inside
+          a much larger German occult subculture that included astrology, graphology, and psychical
+          research, and that drew adherents specifically because it promised to reconcile scientific
+          modernity with spiritual meaning — a framing that helps explain anthroposophy's appeal without
+          needing to settle whether its specific claims are true.
+        </p>
+
         <SeeAlso links={[['/anthroposophy', 'a life and a method'], ['/threefolding', 'the threefold social order'], ['/comparisons', 'comparisons and later theories']]} />
         <Sources items={[
           "Michael Ruse, <em>Democracy and Pseudo-Science: Rudolf Steiner and Anthroposophy</em>, Logos Journal.",
           "Peter Staudenmaier, <em>Between Occultism and Fascism: Anthroposophy and the Politics of Race in the Fascist Era</em>, Brill, 2014.",
           "Robert Rose, <em>Transforming Criticisms of Anthroposophy and Waldorf Education</em>.",
           "Peter Zegers and Peter Staudenmaier, critical material collected at waldorfcritics.org.",
+          "Helmut Zander, <em>Rudolf Steiner: Die Biografie</em>, Piper, 2011.",
+          "Corinna Treitel, <em>A Science for the Soul: Occultism and the Genesis of the German Modern</em>, Johns Hopkins University Press, 2004.",
         ]} />
       </article>
     </Layout>

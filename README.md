@@ -1,6 +1,6 @@
 # Notebook 666
 
-An ongoing personal research notebook mapping correspondence systems, numerology, and cosmological
+An ongoing research notebook mapping correspondence systems, numerology, and cosmological
 hierarchies across esoteric thought — centered, chapter by chapter, on Rudolf Steiner's anthroposophy.
 Built with **Vite + React + React Router**, set in system Helvetica, laid out like a Swiss-poster field
 guide rather than a wiki.

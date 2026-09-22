@@ -34,6 +34,15 @@ export default function Comparisons() {
           reasonable comparison between two "world as prison" cosmologies, not an extension of anything
           Steiner wrote.
         </p>
+        <p>
+          Elaine Pagels's <em>The Gnostic Gospels</em> (1979) remains the most widely read account of what
+          the Nag Hammadi texts actually say and why they mattered enough to the early Church to be
+          suppressed — it's a useful corrective to the internet-era habit of treating "gnostic" as a loose
+          synonym for "esoteric in general." The Archons, in Pagels's reading, are best understood as a
+          response to a specific theological problem — how a good God could preside over a visibly unjust
+          world — rather than as a freestanding cosmology of control that later systems, Steiner's included,
+          are somehow secretly continuing.
+        </p>
 
         <h2>Early twentieth-century cosmic fiction</h2>
         <p>
@@ -60,6 +69,7 @@ export default function Comparisons() {
         <SeeAlso links={[['/sorat', 'Sorat'], ['/double', 'the double, and the machines'], ['/reception', 'critical reception']]} />
         <Sources items={[
           "<em>Apocryphon of John</em> and <em>Hypostasis of the Archons</em>, gnostic texts from the Nag Hammadi library.",
+          "Elaine Pagels, <em>The Gnostic Gospels</em>, 1979.",
           "Rudolf Steiner, <em>Christianity as Mystical Fact</em>, 1902.",
           "Contemporary popular and esoteric readings that pair Sorat, the Archons, and technology critique, treated here as objects of survey rather than doctrinal sources.",
         ]} />

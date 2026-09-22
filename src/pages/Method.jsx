@@ -1,6 +1,7 @@
 import Layout from '../components/Layout.jsx'
 import PageHead from '../components/PageHead.jsx'
 import SeeAlso from '../components/SeeAlso.jsx'
+import Sources from '../components/Sources.jsx'
 import { NetworkIcon } from '../components/Icons.jsx'
 
 export default function Method() {
@@ -33,6 +34,17 @@ export default function Method() {
           can actually be traced — checked against its own primary sources, distinguished from what later
           readers added to it, and laid out clearly enough that a skeptical reader can follow the argument
           even while declining to believe it.
+        </p>
+
+        <p>
+          The classic academic account of how this habit of mind operated in early modern Europe is
+          Frances Yates's <em>Giordano Bruno and the Hermetic Tradition</em> (1964), which traces the
+          correspondence-thinking of figures like Marsilio Ficino and Giordano Bruno back to a body of
+          late-antique texts the Renaissance believed, wrongly but productively, to be far older than they
+          were. Yates's larger point is worth keeping in view throughout this notebook: correspondence
+          systems tend to matter historically not because they were right, but because believing them
+          motivated real intellectual and sometimes scientific work — Kepler's early astronomy is
+          unthinkable without the planetary correspondences he spent his life trying to outgrow.
         </p>
 
         <h2>Two tiers, kept strictly apart</h2>
@@ -85,6 +97,10 @@ export default function Method() {
         </div>
 
         <SeeAlso links={[['/anthroposophy', 'a life and a method'], ['/reception', 'critical reception'], ['/comparisons', 'comparisons and later theories']]} />
+        <Sources items={[
+          "Frances Yates, <em>Giordano Bruno and the Hermetic Tradition</em>, 1964.",
+          "Heinrich Cornelius Agrippa, <em>De Occulta Philosophia</em>, 1533.",
+        ]} />
       </article>
     </Layout>
   )

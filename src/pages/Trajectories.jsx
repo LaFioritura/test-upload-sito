@@ -29,6 +29,17 @@ export default function Trajectories() {
           Steiner's own vocabulary. Kandinsky remained an artist with multiple sources, not an
           anthroposophist in any strict sense, but the debt is documented rather than speculative.
         </p>
+        <p>
+          The definitive scholarly account of exactly how far that debt goes is Sixten Ringbom's
+          <em> The Sounding Cosmos: A Study in the Spiritualism of Kandinsky and the Genesis of Abstract
+          Painting</em> (1970, reissued 2022) — a book that, on its first publication, changed how art
+          historians talked about the origins of abstraction altogether, by tracing specific compositional
+          choices in Kandinsky's paintings back to theosophical diagrams and occult color theory he would
+          have encountered directly. Ringbom's larger claim, since widely accepted, is that abstraction
+          didn't emerge primarily from a formal problem inside painting itself, but from artists trying to
+          depict a spiritual reality they believed — following writers like Steiner and Blavatsky — to be
+          literally, not metaphorically, present behind the visible world.
+        </p>
 
         <h3>Hilma af Klint, the forgotten abstractionist</h3>
         <p>
@@ -38,6 +49,18 @@ export default function Trajectories() {
           her about the risks of work produced in a mediumistic state without full conscious integration —
           an observation that sits close to what this notebook's entry on the Guardian of the Threshold
           describes.
+        </p>
+
+        <h3>Mondrian's grid</h3>
+        <p>
+          Piet Mondrian joined the Theosophical Society in 1909, a year after Kandinsky's first contact
+          with Steiner, and stayed a member for the rest of his life. He described his own mature style,
+          Neoplasticism — the grid of black lines and primary color blocks this notebook's own visual
+          system quietly echoes — as, in his own words, theosophical art in the true sense. Unlike
+          Kandinsky, Mondrian's contact was with Theosophy broadly rather than with Steiner's own lecture
+          circuit specifically, but the two painters are usually discussed together as the clearest case of
+          occult correspondence-thinking turning directly into a visual grammar still recognizable a
+          century later.
         </p>
 
         <h3>Adriano Olivetti and the factory as a social organism</h3>
@@ -60,7 +83,9 @@ export default function Trajectories() {
         <SeeAlso links={[['/arts-architecture', 'eurythmy and architecture'], ['/biodynamics', 'biodynamic agriculture'], ['/threefolding', 'the threefold social order']]} />
         <Sources items={[
           "Historical material on Kandinsky, the Theosophical Society in Munich, and <em>Concerning the Spiritual in Art</em>, 1912.",
+          "Sixten Ringbom, <em>The Sounding Cosmos: A Study in the Spiritualism of Kandinsky and the Genesis of Abstract Painting</em>, 1970 / 2022.",
           "Biographical material on Hilma af Klint and her 1908 meeting with Steiner.",
+          "Biographical material on Piet Mondrian and the Theosophical Society, from 1909.",
           "Antonio Benfatto, <em>Threefold Social Order</em>, University of Padua, 2023–2024.",
           "Historical and current material on Demeter biodynamic certification in the wine industry.",
         ]} />

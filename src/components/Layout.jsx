@@ -17,8 +17,7 @@ export default function Layout({ children }) {
         {children}
         {!isHome && (
           <footer className="sitefooter">
-            <span><Link to="/">Notebook 666</Link> — a research portal</span>
-            <span>Not a claim. A map.</span>
+            <span><Link to="/">Notebook 666</Link> — a research portal, sourced page by page</span>
           </footer>
         )}
       </div>

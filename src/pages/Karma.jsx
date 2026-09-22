@@ -41,9 +41,22 @@ export default function Karma() {
           threefold social order elsewhere in this notebook.
         </p>
 
+        <h2>The 1903 essay</h2>
+        <p>
+          Steiner's fullest early statement on the subject is a short 1903 essay, <em>Reincarnation and
+          Karma: Two Fundamental Truths of Existence</em>, written for a general readership rather than for
+          initiates. Its central move is to treat reincarnation not as an exotic import but as the only
+          way to make sense of something everyone already half-notices: that people are born with
+          strikingly different capacities, temperaments, and circumstances that heredity and environment
+          alone don't fully explain. Where a materialist account stops at chance, Steiner's account
+          proposes a continuous, traceable biography — just one that runs longer than any single lifetime,
+          and whose earlier chapters are, by definition, not available to ordinary memory.
+        </p>
+
         <SeeAlso links={[['/constitution', 'the fourfold human being'], ['/threshold', 'the Guardian of the Threshold'], ['/threefolding', 'the threefold social order']]} />
         <Sources items={[
           "Rudolf Steiner, <em>The Philosophy of Freedom</em>, 1894.",
+          "Rudolf Steiner, <em>Reincarnation and Karma: Two Fundamental Truths of Existence</em>, 1903.",
           "Rudolf Steiner, lecture cycle collected as <em>Understanding Society</em>, on karma as a foundation of social life.",
         ]} />
       </article>
