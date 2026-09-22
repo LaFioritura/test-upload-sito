@@ -1,59 +1,61 @@
 import { Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home.jsx'
-import Antroposofia from './pages/Antroposofia.jsx'
-import MetodoGoethiano from './pages/MetodoGoethiano.jsx'
-import TeosofiaScissione from './pages/TeosofiaScissione.jsx'
-import Cronologia from './pages/Cronologia.jsx'
-import Costituzione from './pages/Costituzione.jsx'
-import Epoche from './pages/Epoche.jsx'
+import Method from './pages/Method.jsx'
+import Anthroposophy from './pages/Anthroposophy.jsx'
+import GoetheanMethod from './pages/GoetheanMethod.jsx'
+import TheosophySplit from './pages/TheosophySplit.jsx'
+import Timeline from './pages/Timeline.jsx'
+import Constitution from './pages/Constitution.jsx'
+import Epochs from './pages/Epochs.jsx'
 import Karma from './pages/Karma.jsx'
-import Soglia from './pages/Soglia.jsx'
-import CristoGolgota from './pages/CristoGolgota.jsx'
-import Triplicita from './pages/Triplicita.jsx'
+import Threshold from './pages/Threshold.jsx'
+import ChristGolgotha from './pages/ChristGolgotha.jsx'
+import Triplicity from './pages/Triplicity.jsx'
 import Sorat from './pages/Sorat.jsx'
-import Michele from './pages/Michele.jsx'
-import Doppio from './pages/Doppio.jsx'
-import FondazioneMeditazione from './pages/FondazioneMeditazione.jsx'
-import PedagogiaWaldorf from './pages/PedagogiaWaldorf.jsx'
-import AgricolturaBiodinamica from './pages/AgricolturaBiodinamica.jsx'
-import MedicinaAntroposofica from './pages/MedicinaAntroposofica.jsx'
-import ArtiArchitettura from './pages/ArtiArchitettura.jsx'
-import Triarticolazione from './pages/Triarticolazione.jsx'
-import RicezioneCritica from './pages/RicezioneCritica.jsx'
-import Confronti from './pages/Confronti.jsx'
-import TraiettorieCuriose from './pages/TraiettorieCuriose.jsx'
-import Bibliografia from './pages/Bibliografia.jsx'
-import Conclusione from './pages/Conclusione.jsx'
+import Michael from './pages/Michael.jsx'
+import Double from './pages/Double.jsx'
+import FoundationStone from './pages/FoundationStone.jsx'
+import Waldorf from './pages/Waldorf.jsx'
+import Biodynamics from './pages/Biodynamics.jsx'
+import Medicine from './pages/Medicine.jsx'
+import ArtsArchitecture from './pages/ArtsArchitecture.jsx'
+import Threefolding from './pages/Threefolding.jsx'
+import Reception from './pages/Reception.jsx'
+import Comparisons from './pages/Comparisons.jsx'
+import Trajectories from './pages/Trajectories.jsx'
+import Bibliography from './pages/Bibliography.jsx'
+import Conclusion from './pages/Conclusion.jsx'
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/antroposofia" element={<Antroposofia />} />
-      <Route path="/metodo-goethiano" element={<MetodoGoethiano />} />
-      <Route path="/teosofia-scissione" element={<TeosofiaScissione />} />
-      <Route path="/cronologia" element={<Cronologia />} />
-      <Route path="/costituzione" element={<Costituzione />} />
-      <Route path="/epoche" element={<Epoche />} />
+      <Route path="/method" element={<Method />} />
+      <Route path="/anthroposophy" element={<Anthroposophy />} />
+      <Route path="/goethean-method" element={<GoetheanMethod />} />
+      <Route path="/theosophy-split" element={<TheosophySplit />} />
+      <Route path="/timeline" element={<Timeline />} />
+      <Route path="/constitution" element={<Constitution />} />
+      <Route path="/epochs" element={<Epochs />} />
       <Route path="/karma" element={<Karma />} />
-      <Route path="/soglia" element={<Soglia />} />
-      <Route path="/cristo-golgota" element={<CristoGolgota />} />
-      <Route path="/triplicita" element={<Triplicita />} />
+      <Route path="/threshold" element={<Threshold />} />
+      <Route path="/christ-golgotha" element={<ChristGolgotha />} />
+      <Route path="/triplicity" element={<Triplicity />} />
       <Route path="/sorat" element={<Sorat />} />
-      <Route path="/michele" element={<Michele />} />
-      <Route path="/doppio" element={<Doppio />} />
-      <Route path="/fondazione-meditazione" element={<FondazioneMeditazione />} />
-      <Route path="/pedagogia-waldorf" element={<PedagogiaWaldorf />} />
-      <Route path="/agricoltura-biodinamica" element={<AgricolturaBiodinamica />} />
-      <Route path="/medicina-antroposofica" element={<MedicinaAntroposofica />} />
-      <Route path="/arti-architettura" element={<ArtiArchitettura />} />
-      <Route path="/triarticolazione" element={<Triarticolazione />} />
-      <Route path="/ricezione-critica" element={<RicezioneCritica />} />
-      <Route path="/confronti" element={<Confronti />} />
-      <Route path="/traiettorie-curiose" element={<TraiettorieCuriose />} />
-      <Route path="/bibliografia" element={<Bibliografia />} />
-      <Route path="/conclusione" element={<Conclusione />} />
+      <Route path="/michael" element={<Michael />} />
+      <Route path="/double" element={<Double />} />
+      <Route path="/foundation-stone" element={<FoundationStone />} />
+      <Route path="/waldorf" element={<Waldorf />} />
+      <Route path="/biodynamics" element={<Biodynamics />} />
+      <Route path="/medicine" element={<Medicine />} />
+      <Route path="/arts-architecture" element={<ArtsArchitecture />} />
+      <Route path="/threefolding" element={<Threefolding />} />
+      <Route path="/reception" element={<Reception />} />
+      <Route path="/comparisons" element={<Comparisons />} />
+      <Route path="/trajectories" element={<Trajectories />} />
+      <Route path="/bibliography" element={<Bibliography />} />
+      <Route path="/conclusion" element={<Conclusion />} />
     </Routes>
   )
 }

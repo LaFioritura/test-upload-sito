@@ -1,22 +1,66 @@
 import Layout from '../components/Layout.jsx'
+import PageHead from '../components/PageHead.jsx'
 import SeeAlso from '../components/SeeAlso.jsx'
 import Sources from '../components/Sources.jsx'
+import { SunIcon } from '../components/Icons.jsx'
 
 export default function Sorat() {
   return (
     <Layout>
-      <p className="eyebrow"><span className="dot" />le tre potenze</p>
-      <h1>Sorat: la potenza che non tenta, nega</h1>
+      <PageHead
+        tag="The Three Powers"
+        tagColor="yellow"
+        icon={SunIcon}
+        title="Sorat"
+        lede="The sun's demon, decoded from Hebrew letters, on a 666-year clock."
+      />
       <article>
-        <p>Sorat appartiene a un ciclo diverso da quello della triplicità: le conferenze sull'Apocalisse di Giovanni, tenute fra Monaco e Norimberga nel 1907-08, oggi raccolte nei volumi 104 e 104a. Lì Steiner ricostruisce, con la gematria, come l'Apocalittico avrebbe cifrato il nome della bestia: trascrivendo correttamente le lettere ebraiche nei loro valori numerici — al posto della lettura tradizionale, filologicamente scorretta, che dà "Nerone" — si ottiene la parola "Sorat", il cui valore è appunto 666. Nell'antica demonologia stellare, dove ogni astro ha un'intelligenza e un demone, Sorat è il demone del sole: la controparte oscura di quella stessa intelligenza di cui, in questa lettura, il Cristo è la rivelazione.</p>
-        <h2>Un ritmo di secoli</h2>
-        <p>Steiner lega Sorat a un ritmo storico di 666 anni, in cui la sua influenza tornerebbe a farsi sentire con più forza: un primo culmine attorno al 666, un secondo al 1332, un terzo atteso verso il 1998. Il primo coinciderebbe con l'Accademia di Gondishapur — un centro di sapere che preservò i testi di Aristotele, ma che secondo Steiner diffuse anche una conoscenza spirituale prematura, sbilanciata, un eccesso poi compensato dalla nascita dell'Islam. A questo ritmo se ne oppone uno di segno opposto, quello dei 333 anni, legato al Mistero del Golgota e alle forze di guarigione della coscienza.</p>
-        <h2>Cosa lo rende diverso</h2>
-        <p>Lucifero e Arimane sono esseri in ritardo rispetto a un'evoluzione di cui restano comunque parte — la loro resistenza serve a qualcosa, come si è visto parlando della triplicità. Sorat non funziona così. Non è un'eredità arretrata di una fase cosmica precedente: è una potenza che non vuole deviare lo sviluppo umano, vuole interromperlo. La sua opposizione punta dritta all'impulso del Cristo — e, come racconta la pagina successiva, contro la missione dell'essere che quell'impulso rappresenta nella nostra epoca.</p>
-        <SeeAlso links={[['/triplicita', 'il mistero della triplicità'], ['/michele', 'Michele e l\'intelligenza cosmica'], ['/confronti', 'confronti e teorie successive']]} />
+        <p>
+          Sorat belongs to a different lecture cycle than the mystery of triplicity: the two courses on
+          the Apocalypse of John that Steiner delivered in Munich and Nuremberg in 1907–08, now collected
+          as volumes 104 and 104a of his complete works. There he reconstructs, through gematria, how the
+          Apocalypticist would have encoded the beast's name. Transliterating the Hebrew letters correctly
+          into their numeric values — rather than the traditional, philologically mistaken reading that
+          produces "Nero" — yields the word "Sorat," whose value is precisely 666. In the old tradition of
+          stellar demonology, which assigns every celestial body both a bright intelligence and a dark
+          demon, Sorat is the demon of the sun: the shadow counterpart of the same solar intelligence of
+          which, in this reading, Christ is the revelation.
+        </p>
+
+        <h2>A six-hundred-year clock</h2>
+        <p>
+          Steiner ties Sorat to a historical rhythm of 666 years in which its influence would intensify: a
+          first peak around the year 666, a second around 1332, a third expected around 1998. The first of
+          these moments, he claims, coincides with the Academy of Gondishapur — a center of learning that
+          preserved Aristotle's texts for later transmission to Europe, but that, in this account, also
+          spread a spiritual knowledge that was premature and unbalanced, an excess later offset, in
+          Steiner's telling, by the rise of Islam. Set against this rhythm is one of the opposite sign: a
+          333-year cycle tied to the Mystery of Golgotha and to the healing forces of human consciousness.
+        </p>
+
+        <h2>What actually sets it apart</h2>
+        <p>
+          The point that genuinely distinguishes Sorat from Lucifer and Ahriman — easy to lose in a
+          casual retelling — is this: Lucifer and Ahriman are beings left behind by an evolution of which
+          they nonetheless remain part, and whose hindering function turns out to be necessary for the
+          achievement of freedom, as the entry on triplicity lays out. Sorat isn't presented that way. It
+          isn't a belated inheritance from an earlier cosmic phase; it's a power whose objective isn't to
+          divert human development but to interrupt it outright. Its opposition isn't symmetrical to
+          Lucifer's and Ahriman's — it's aimed directly at the Christ impulse, and, as the next entry
+          covers, at the mission of the being that impulse is said to represent in the present age.
+        </p>
+
+        <div className="callout">
+          A note on scope: nothing in this doctrine, as Steiner states it, singles out any living person or
+          community for blame. The historical narrative around Gondishapur assigns roles to civilizations
+          and religious traditions in the abstract, centuries removed from the present — a point worth
+          holding onto exactly because later, looser readings sometimes don't.
+        </div>
+
+        <SeeAlso links={[['/triplicity', 'the mystery of triplicity'], ['/michael', 'Michael and the falling intelligence'], ['/comparisons', 'comparisons and later theories']]} />
         <Sources items={[
-          "Rudolf Steiner, <em>Die Apokalypse des Johannes</em> (GA 104, Norimberga 1908) e <em>Aus der Bilderschrift der Apokalypse des Johannes</em> (GA 104a, Monaco 1907).",
-          "Rudolf Steiner, <em>Eternal and Transient Elements in Human Life</em>, sul ritmo dei 666 anni e l'episodio di Gondishapur.",
+          "Rudolf Steiner, <em>Die Apokalypse des Johannes</em> (GA 104, Nuremberg 1908) and <em>Aus der Bilderschrift der Apokalypse des Johannes</em> (GA 104a, Munich 1907).",
+          "Rudolf Steiner, <em>Eternal and Transient Elements in Human Life</em>, on the 666-year rhythm and the Gondishapur episode.",
         ]} />
       </article>
     </Layout>

@@ -1,9 +1,9 @@
 {
-  "name": "soratlas",
-  "version": "2.0.0",
+  "name": "notebook-666",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
-  "description": "Un portale sull'antroposofia di Rudolf Steiner, costruito con Vite e React.",
+  "description": "An ongoing personal research notebook mapping correspondence systems and cosmological hierarchies, centered on Rudolf Steiner's anthroposophy. Built with Vite and React.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -1,84 +1,116 @@
-# Soratlas
+# Notebook 666
 
-Un portale sull'antroposofia di Rudolf Steiner, costruito con **Vite + React + React Router**.
+An ongoing personal research notebook mapping correspondence systems, numerology, and cosmological
+hierarchies across esoteric thought — centered, chapter by chapter, on Rudolf Steiner's anthroposophy.
+Built with **Vite + React + React Router**, set in system Helvetica, laid out like a Swiss-poster field
+guide rather than a wiki.
 
-Ventiquattro pagine — dalla biografia di Steiner alla dottrina di Sorat, dall'agricoltura biodinamica alla ricezione critica accademica — ciascuna con le proprie fonti. Un nuovo diagramma d'apertura, in forma di bilancia, sostituisce il vecchio albero a nodi.
+No author's name is attached to it by design. It's meant to be picked up, checked against its sources,
+and extended by anyone.
 
-## Sviluppo locale
+## What changed in this version
+
+- **Language**: fully in English.
+- **Depth**: every entry was rewritten and substantially expanded — more sources, more specifics, more
+  connective tissue between entries.
+- **The diagram**: no longer a tree or a flowchart. The homepage now shows a scattered constellation of
+  twelve terms with no top node and no required reading order — click any term, or ignore the diagram
+  entirely and use the index below it.
+- **Typeface**: the whole site is set in system Helvetica (`Helvetica Neue, Helvetica, Arial,
+  sans-serif`). Helvetica itself isn't a web font that can be legally bundled and shipped, so the site
+  relies on the real thing where the visitor's OS has it (mostly macOS and iOS) and falls back to Arial,
+  its closest metric match, everywhere else — which is the standard, licensing-safe way to "use
+  Helvetica" on the web.
+- **Look**: a bold red/blue/yellow system on black and white, thick rules, big numerals — closer to
+  Swiss International Style than to a research-paper template, while keeping the sourcing discipline
+  that made the earlier versions of this project usable as reference material.
+- **The opening**: the homepage and the new `/method` entry no longer lead with Steiner's name. They lead
+  with the pattern — correspondence systems in general — and name him only once the method that makes
+  him worth this much attention has been laid out. Every entry after `/method` uses his name freely.
+- **Images**: see the note below — this version uses a small set of original graphic icons instead of
+  photographs.
+
+## A note on the images
+
+This notebook doesn't embed photographs of real artworks, real historical photos of Steiner or the
+Goetheanum, or reproductions of paintings by Kandinsky or Hilma af Klint, even though several entries
+describe exactly those things. Two practical reasons: first, a public repository is not a safe place to
+guess at image licensing — public-domain status depends on jurisdiction and on the specific photograph
+or scan, not just on how long ago the artist died, and getting it wrong in a permanent, redistributable
+project is a real risk rather than a theoretical one. Second, embedding real photos would have meant a
+patchwork of licenses and visual styles across twenty-six entries, working against the single, deliberate
+graphic identity this version is trying to build.
+
+Instead, `src/components/Icons.jsx` holds a small set of original flat icons — a sun, a scale, a spiral,
+a network, a seed, a flame, a crystal, a double figure, a compass, a beam, a book, roots — drawn for this
+project in the site's own red/blue/yellow system, and placed at the top of each entry to match its
+theme. If you want to replace any of them with a properly licensed photograph later, each `PageHead` call
+takes an `icon` prop — swap it for an `<img>` and it'll sit in the same spot.
+
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Apre un server locale (di norma su `http://localhost:5173`) con hot reload.
-
-## Build di produzione
+## Production build
 
 ```bash
 npm run build
+npm run preview   # to check the build locally
 ```
 
-Genera la cartella `dist/`, pronta per qualunque hosting statico. Per un'anteprima locale della build:
-
-```bash
-npm run preview
-```
-
-## Struttura
+## Structure
 
 ```
-soratlas-react/
-├── index.html                 root Vite, carica src/main.jsx
+notebook-666/
+├── index.html
 ├── package.json
 ├── vite.config.js
 ├── src/
-│   ├── main.jsx                entry point React
-│   ├── App.jsx                 tutte le rotte
-│   ├── index.css               foglio di stile unico
+│   ├── main.jsx
+│   ├── App.jsx                  every route
+│   ├── index.css                the entire visual system, one file
 │   ├── components/
-│   │   ├── Layout.jsx           intestazione, piè di pagina, wrapper di pagina
-│   │   ├── Diagram.jsx          il diagramma della bilancia, cliccabile
-│   │   ├── SeeAlso.jsx          i link "vedi anche" in fondo a ogni pagina
-│   │   └── Sources.jsx          la sezione fonti in fondo a ogni pagina
-│   └── pages/                   una componente per pagina (24 file)
+│   │   ├── Layout.jsx
+│   │   ├── PageHead.jsx          tag + icon + title + dek, used by every entry
+│   │   ├── Diagram.jsx           the constellation diagram
+│   │   ├── Icons.jsx             the original icon set
+│   │   ├── SeeAlso.jsx
+│   │   └── Sources.jsx
+│   └── pages/                    26 entries, one component each
 └── README.md
 ```
 
-Ogni pagina è una componente React autonoma: importa `Layout`, `SeeAlso`, `Sources`, e contiene il proprio testo in JSX. Non c'è un livello di dati centralizzato — è una scelta deliberata, per tenere ogni pagina leggibile e modificabile da sola, senza dover capire uno schema condiviso.
-
-## Pubblicare su GitHub
+## Publish to GitHub
 
 ```bash
 git init
 git add .
-git commit -m "Soratlas: versione React"
+git commit -m "Notebook 666"
 git branch -M main
-git remote add origin https://github.com/<tuo-utente>/soratlas.git
+git remote add origin https://github.com/<your-username>/notebook-666.git
 git push -u origin main
 ```
 
-## Deploy su Vercel
+## Deploy on Vercel
 
-1. Su [vercel.com](https://vercel.com), accedi con GitHub.
-2. "Add New… → Project", scegli il repository.
-3. Vercel riconosce automaticamente **Vite**: framework preset, build command (`npm run build`) e output directory (`dist`) si compilano da soli. Non serve toccare nulla.
-4. Deploy.
+Import the repository at [vercel.com](https://vercel.com). Vercel auto-detects Vite; build command and
+output directory are filled in automatically. Deploy. Every push to `main` updates the live site.
 
-Ogni push su `main` aggiorna il sito pubblicato.
+## Adding an entry
 
-## Come aggiungere una pagina
+1. Copy an existing page in `src/pages/` as a template.
+2. Add its route in `src/App.jsx`.
+3. Add it to the `GROUPS` array in `src/pages/Home.jsx`, in the right thematic group.
+4. If it's central enough to earn a place in the opening diagram, add a node in
+   `src/components/Diagram.jsx` — no hierarchy, so it can go anywhere.
+5. Keep the notebook's one hard rule: original doctrine (grouped under Cosmology, The Three Powers,
+   Applied) stays clearly separate from later reception and outside comparisons (grouped under Reception
+   & Comparisons). Mixing the two is the one mistake this project tries hardest to avoid.
 
-1. Crea `src/pages/NomePagina.jsx` prendendo come modello una pagina esistente (per esempio `src/pages/Karma.jsx`).
-2. Aggiungi la rotta in `src/App.jsx`: import del componente e una riga `<Route path="/nome-pagina" element={<NomePagina />} />`.
-3. Aggiungi una voce nell'array `GROUPS` di `src/pages/Home.jsx`, nel gruppo tematico più adatto.
-4. Se l'argomento è abbastanza centrale da meritare un nodo nella bilancia d'apertura, aggiungilo in `src/components/Diagram.jsx`.
-5. Mantieni la distinzione già presente nel portale fra dottrina originale di Steiner (gruppi "Cosmologia", "Le tre potenze", "Le arti e la pratica") e riletture successive o confronti esterni (gruppo "Ricezione e confronti"): è la regola editoriale principale del progetto.
+## License
 
-## Nota sui contenuti
-
-Ogni pagina ricostruisce fonti dichiarate — conferenze, lettere, libri di Steiner, o letteratura secondaria — e le cita in fondo. Il portale non è una valutazione storiografica indipendente della fondatezza di questa dottrina, né un'affermazione sull'esistenza reale delle entità descritte; la pagina "Ricezione critica" riporta apertamente anche le obiezioni sollevate da storici indipendenti dal movimento antroposofico.
-
-## Licenza
-
-Codice e struttura: MIT. I testi sono una sintesi originale a partire dalle fonti citate in ciascuna pagina; verificale prima di ripubblicarle altrove.
+Code and layout: MIT. The text is an original synthesis drawn from the sources cited at the bottom of
+each entry — check them before republishing anything from here elsewhere.
