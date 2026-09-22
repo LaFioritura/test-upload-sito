@@ -6,7 +6,7 @@ import { CompassIcon } from '../components/Icons.jsx'
 
 export default function TheosophySplit() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Orientation"
         tagColor="blue"

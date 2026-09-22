@@ -29,7 +29,7 @@ const EVENTS = [
 
 export default function Timeline() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Orientation"
         tagColor="blue"

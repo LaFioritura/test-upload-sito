@@ -6,7 +6,7 @@ import { RootsIcon } from '../components/Icons.jsx'
 
 export default function GoetheanMethod() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Orientation"
         tagColor="blue"

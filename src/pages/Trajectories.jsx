@@ -6,7 +6,7 @@ import { CompassIcon } from '../components/Icons.jsx'
 
 export default function Trajectories() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Reception & Comparisons"
         tagColor="yellow"

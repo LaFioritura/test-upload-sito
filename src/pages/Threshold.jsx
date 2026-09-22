@@ -6,7 +6,7 @@ import { DoubleIcon } from '../components/Icons.jsx'
 
 export default function Threshold() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Cosmology"
         tagColor="red"

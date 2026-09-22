@@ -25,6 +25,10 @@ import Threefolding from './pages/Threefolding.jsx'
 import Reception from './pages/Reception.jsx'
 import Comparisons from './pages/Comparisons.jsx'
 import Trajectories from './pages/Trajectories.jsx'
+import PresentTense from './pages/PresentTense.jsx'
+import Hypothesis from './pages/Hypothesis.jsx'
+import CaseStudies from './pages/CaseStudies.jsx'
+import Predictions from './pages/Predictions.jsx'
 import Bibliography from './pages/Bibliography.jsx'
 import Conclusion from './pages/Conclusion.jsx'
 
@@ -57,6 +61,10 @@ export default function App() {
       <Route path="/reception" element={<Reception />} />
       <Route path="/comparisons" element={<Comparisons />} />
       <Route path="/trajectories" element={<Trajectories />} />
+      <Route path="/present-tense" element={<PresentTense />} />
+      <Route path="/hypothesis" element={<Hypothesis />} />
+      <Route path="/case-studies" element={<CaseStudies />} />
+      <Route path="/predictions" element={<Predictions />} />
       <Route path="/bibliography" element={<Bibliography />} />
       <Route path="/conclusion" element={<Conclusion />} />
       </Routes>

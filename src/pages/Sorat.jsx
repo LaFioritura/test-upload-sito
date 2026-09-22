@@ -6,7 +6,7 @@ import { SunIcon } from '../components/Icons.jsx'
 
 export default function Sorat() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="The Three Powers"
         tagColor="yellow"

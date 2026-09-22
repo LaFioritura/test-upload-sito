@@ -6,7 +6,7 @@ import { SeedIcon } from '../components/Icons.jsx'
 
 export default function Waldorf() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Applied"
         tagColor="blue"

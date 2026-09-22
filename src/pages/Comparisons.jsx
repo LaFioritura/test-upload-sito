@@ -6,7 +6,7 @@ import { NetworkIcon } from '../components/Icons.jsx'
 
 export default function Comparisons() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Reception & Comparisons"
         tagColor="yellow"

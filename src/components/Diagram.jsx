@@ -15,6 +15,8 @@ const NODES = [
   { id: 'threshold', label: 'THRESHOLD', x: 615, y: 275, to: '/threshold', c: 1 },
   { id: 'threefold', label: 'THREEFOLD ORDER', x: 165, y: 385, to: '/threefolding', c: 2 },
   { id: 'golgotha', label: 'GOLGOTHA', x: 405, y: 300, to: '/christ-golgotha', c: 3 },
+  { id: 'attention', label: 'ATTENTION', x: 545, y: 80, to: '/present-tense', c: 0 },
+  { id: 'ai', label: 'GENERATIVE AI', x: 500, y: 240, to: '/case-studies', c: 1 },
 ]
 
 const EDGES = [
@@ -23,6 +25,7 @@ const EDGES = [
   ['ahriman', 'double'], ['michael', 'golgotha'], ['karma', 'threshold'],
   ['karma', 'threefold'], ['archons', 'sorat'], ['double', 'threshold'],
   ['golgotha', 'karma'], ['threefold', 'lucifer'],
+  ['sorat', 'attention'], ['ahriman', 'ai'], ['double', 'ai'],
 ]
 
 const byId = Object.fromEntries(NODES.map((n) => [n.id, n]))

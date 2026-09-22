@@ -6,7 +6,7 @@ import { SpiralIcon } from '../components/Icons.jsx'
 
 export default function ArtsArchitecture() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Applied"
         tagColor="blue"

@@ -6,7 +6,7 @@ import { SunIcon } from '../components/Icons.jsx'
 
 export default function ChristGolgotha() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Cosmology"
         tagColor="red"

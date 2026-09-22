@@ -6,7 +6,7 @@ import { SeedIcon } from '../components/Icons.jsx'
 
 export default function Constitution() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Cosmology"
         tagColor="red"

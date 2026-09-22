@@ -6,7 +6,7 @@ import { FlameIcon } from '../components/Icons.jsx'
 
 export default function FoundationStone() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="The Three Powers"
         tagColor="yellow"

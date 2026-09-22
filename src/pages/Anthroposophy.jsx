@@ -6,7 +6,7 @@ import { BookIcon } from '../components/Icons.jsx'
 
 export default function Anthroposophy() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Orientation"
         tagColor="blue"

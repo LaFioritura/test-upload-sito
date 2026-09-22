@@ -6,7 +6,7 @@ import { BookIcon } from '../components/Icons.jsx'
 
 export default function Reception() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Reception & Comparisons"
         tagColor="yellow"

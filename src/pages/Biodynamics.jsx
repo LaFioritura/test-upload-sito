@@ -6,7 +6,7 @@ import { RootsIcon } from '../components/Icons.jsx'
 
 export default function Biodynamics() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Applied"
         tagColor="blue"

@@ -6,7 +6,7 @@ import { CrystalIcon } from '../components/Icons.jsx'
 
 export default function Medicine() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Applied"
         tagColor="blue"

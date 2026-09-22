@@ -6,7 +6,7 @@ import { DoubleIcon } from '../components/Icons.jsx'
 
 export default function Double() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="The Three Powers"
         tagColor="yellow"

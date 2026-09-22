@@ -6,7 +6,7 @@ import { ScaleIcon } from '../components/Icons.jsx'
 
 export default function Triplicity() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="The Three Powers"
         tagColor="yellow"

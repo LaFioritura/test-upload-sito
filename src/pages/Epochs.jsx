@@ -6,7 +6,7 @@ import { SpiralIcon } from '../components/Icons.jsx'
 
 export default function Epochs() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Cosmology"
         tagColor="red"

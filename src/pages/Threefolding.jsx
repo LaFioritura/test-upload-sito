@@ -6,7 +6,7 @@ import { ScaleIcon } from '../components/Icons.jsx'
 
 export default function Threefolding() {
   return (
-    <Layout>
+    <Layout translated={false}>
       <PageHead
         tag="Social Life"
         tagColor="red"

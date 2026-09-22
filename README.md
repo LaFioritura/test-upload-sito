@@ -10,6 +10,21 @@ and extended by anyone.
 
 ## What changed in this version
 
+- **A new section, Reading the Present**: four entries (`/present-tense`, `/hypothesis`,
+  `/case-studies`, `/predictions`) that take the framework built in the rest of the notebook and apply it
+  directly to smartphones, social feeds, and generative AI — a stated one-line thesis, a mapping table
+  from old archetypes to specific modern mechanisms, an honest for/against page with real, cited research
+  on both sides, three named case studies (Netflix, TikTok, ChatGPT), and five falsifiable ten-year
+  predictions. This is clearly labeled as interpretation applied to the present, not as Steiner's own
+  doctrine — the same two-tier discipline described below still applies.
+- Fixed a scroll-position bug: navigating to a new entry now always opens at the top of the page.
+- Removed the closing tagline and the word "personal" from the framing.
+- Substantially expanded sourcing across the rest of the notebook: added Gary Lachman, Helmut Zander,
+  Corinna Treitel, Sixten Ringbom, Mary Lutyens, Frances Yates, Elaine Pagels, R. H. Charles, and
+  Steiner's own 1903 essay on reincarnation and karma.
+
+## What changed in the version before this one
+
 - **Language**: fully in English.
 - **Depth**: every entry was rewritten and substantially expanded — more sources, more specifics, more
   connective tissue between entries.
