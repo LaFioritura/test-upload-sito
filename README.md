@@ -1,73 +1,58 @@
 # Soratlas
 
-Un portale aperto sull'antroposofia di Rudolf Steiner: non solo Lucifero, Arimane e Sorat, ma la sua biografia e il suo metodo, la cosmologia dell'evoluzione umana, le applicazioni pratiche (pedagogia, agricoltura, medicina, arti), la vita sociale, e infine la ricezione critica accademica e i confronti con altre tradizioni.
+Un portale sull'antroposofia di Rudolf Steiner, costruito con **Vite + React + React Router**.
 
-Sito statico, nessun framework, nessuna build. HTML e CSS puri: apri `index.html` in un browser e funziona. 24 pagine di contenuto, ciascuna autosufficiente con le proprie fonti.
+Ventiquattro pagine — dalla biografia di Steiner alla dottrina di Sorat, dall'agricoltura biodinamica alla ricezione critica accademica — ciascuna con le proprie fonti. Un nuovo diagramma d'apertura, in forma di bilancia, sostituisce il vecchio albero a nodi.
+
+## Sviluppo locale
+
+```bash
+npm install
+npm run dev
+```
+
+Apre un server locale (di norma su `http://localhost:5173`) con hot reload.
+
+## Build di produzione
+
+```bash
+npm run build
+```
+
+Genera la cartella `dist/`, pronta per qualunque hosting statico. Per un'anteprima locale della build:
+
+```bash
+npm run preview
+```
 
 ## Struttura
 
 ```
-soratlas/
-├── index.html                          portale: diagramma + indice di tutte le pagine
-├── pages/
-│   │  vita e metodo
-│   ├── antroposofia.html
-│   ├── metodo-goethiano.html
-│   ├── teosofia-scissione.html
-│   ├── cronologia.html
-│   │  cosmologia
-│   ├── costituzione.html
-│   ├── epoche.html
-│   ├── karma.html
-│   ├── soglia.html
-│   ├── cristo-golgota.html
-│   │  le tre potenze
-│   ├── triplicita.html
-│   ├── sorat.html
-│   ├── michele.html
-│   ├── doppio.html
-│   ├── fondazione-meditazione.html
-│   │  le arti e la pratica
-│   ├── pedagogia-waldorf.html
-│   ├── agricoltura-biodinamica.html
-│   ├── medicina-antroposofica.html
-│   ├── arti-architettura.html
-│   │  vita sociale
-│   ├── triarticolazione.html
-│   │  ricezione e confronti
-│   ├── ricezione-critica.html
-│   ├── confronti.html
-│   ├── traiettorie-curiose.html
-│   │  riferimenti e chiusura
-│   ├── bibliografia.html
-│   └── conclusione.html
-├── assets/
-│   └── style.css                       un unico foglio di stile condiviso
+soratlas-react/
+├── index.html                 root Vite, carica src/main.jsx
+├── package.json
+├── vite.config.js
+├── src/
+│   ├── main.jsx                entry point React
+│   ├── App.jsx                 tutte le rotte
+│   ├── index.css               foglio di stile unico
+│   ├── components/
+│   │   ├── Layout.jsx           intestazione, piè di pagina, wrapper di pagina
+│   │   ├── Diagram.jsx          il diagramma della bilancia, cliccabile
+│   │   ├── SeeAlso.jsx          i link "vedi anche" in fondo a ogni pagina
+│   │   └── Sources.jsx          la sezione fonti in fondo a ogni pagina
+│   └── pages/                   una componente per pagina (24 file)
 └── README.md
 ```
 
-Ogni pagina è indipendente e autosufficiente: contiene il proprio testo, i propri link "vedi anche" verso le pagine correlate, e una propria sezione "Fonti" con la bibliografia specifica di quell'argomento. Non c'è build step da eseguire: aggiungere contenuto significa aggiungere o modificare file HTML.
-
-## Sviluppo locale
-
-Non serve installare nulla. Per un piccolo server locale (comodo per i link relativi):
-
-```bash
-npx serve .
-```
-
-oppure, con Python già installato:
-
-```bash
-python3 -m http.server 8000
-```
+Ogni pagina è una componente React autonoma: importa `Layout`, `SeeAlso`, `Sources`, e contiene il proprio testo in JSX. Non c'è un livello di dati centralizzato — è una scelta deliberata, per tenere ogni pagina leggibile e modificabile da sola, senza dover capire uno schema condiviso.
 
 ## Pubblicare su GitHub
 
 ```bash
 git init
 git add .
-git commit -m "Soratlas: prima versione del portale"
+git commit -m "Soratlas: versione React"
 git branch -M main
 git remote add origin https://github.com/<tuo-utente>/soratlas.git
 git push -u origin main
@@ -75,29 +60,25 @@ git push -u origin main
 
 ## Deploy su Vercel
 
-1. Vai su [vercel.com](https://vercel.com) e accedi con il tuo account GitHub.
-2. "Add New… → Project", scegli il repository `soratlas`.
-3. Framework Preset: **Other** (è un sito statico, non serve altro).
-4. Root Directory: lascia `./`.
-5. Build Command e Output Directory: lasciali vuoti — non c'è build.
-6. Deploy.
+1. Su [vercel.com](https://vercel.com), accedi con GitHub.
+2. "Add New… → Project", scegli il repository.
+3. Vercel riconosce automaticamente **Vite**: framework preset, build command (`npm run build`) e output directory (`dist`) si compilano da soli. Non serve toccare nulla.
+4. Deploy.
 
-Ogni push su `main` aggiorna automaticamente il sito pubblicato.
+Ogni push su `main` aggiorna il sito pubblicato.
 
-## Come estendere il portale
+## Come aggiungere una pagina
 
-Per aggiungere un nuovo argomento:
-
-1. Copia una pagina esistente in `pages/` come modello (per esempio `pages/karma.html`) e rinominala.
-2. Aggiorna `<title>`, `<h1>`, il testo dell'articolo, i link "vedi anche" e la sezione "Fonti".
-3. Aggiungi una voce corrispondente in `index.html`, dentro il gruppo tematico più adatto (o creane uno nuovo).
-4. Se l'argomento è abbastanza centrale da meritare un nodo nel diagramma di apertura, aggiungi un `<a class="node-link">` all'SVG in `index.html`, seguendo lo schema degli altri nodi.
-5. Mantieni la distinzione già presente nel portale fra dottrina originale di Steiner (nelle pagine sotto "Fondamenti" e "Le tre potenze") e riletture successive o confronti esterni (pagine sotto "Ricezione e confronti"): è la regola editoriale principale del progetto.
+1. Crea `src/pages/NomePagina.jsx` prendendo come modello una pagina esistente (per esempio `src/pages/Karma.jsx`).
+2. Aggiungi la rotta in `src/App.jsx`: import del componente e una riga `<Route path="/nome-pagina" element={<NomePagina />} />`.
+3. Aggiungi una voce nell'array `GROUPS` di `src/pages/Home.jsx`, nel gruppo tematico più adatto.
+4. Se l'argomento è abbastanza centrale da meritare un nodo nella bilancia d'apertura, aggiungilo in `src/components/Diagram.jsx`.
+5. Mantieni la distinzione già presente nel portale fra dottrina originale di Steiner (gruppi "Cosmologia", "Le tre potenze", "Le arti e la pratica") e riletture successive o confronti esterni (gruppo "Ricezione e confronti"): è la regola editoriale principale del progetto.
 
 ## Nota sui contenuti
 
-Ogni pagina ricostruisce fonti dichiarate (conferenze, lettere, libri di Steiner, o letteratura secondaria) e le cita in fondo. Il portale non è una valutazione storiografica indipendente della fondatezza di questa dottrina, né un'affermazione sull'esistenza reale delle entità descritte; la pagina "Ricezione critica" raccoglie apertamente anche le obiezioni sollevate da storici indipendenti dal movimento antroposofico.
+Ogni pagina ricostruisce fonti dichiarate — conferenze, lettere, libri di Steiner, o letteratura secondaria — e le cita in fondo. Il portale non è una valutazione storiografica indipendente della fondatezza di questa dottrina, né un'affermazione sull'esistenza reale delle entità descritte; la pagina "Ricezione critica" riporta apertamente anche le obiezioni sollevate da storici indipendenti dal movimento antroposofico.
 
 ## Licenza
 
-Codice e struttura del sito: MIT. I testi sono una sintesi originale a partire dalle fonti citate in ciascuna pagina; verificale prima di ripubblicarle altrove.
+Codice e struttura: MIT. I testi sono una sintesi originale a partire dalle fonti citate in ciascuna pagina; verificale prima di ripubblicarle altrove.
