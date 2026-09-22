@@ -1,8 +1,10 @@
-export default function PageHead({ tag, tagColor = '', icon: Icon, title, lede }) {
+// Minimal on purpose: no colored tag pill, no icon graphic. Just a quiet
+// dateline-style label and a title, so the prose underneath carries the
+// weight instead of the chrome around it.
+export default function PageHead({ tag, title, lede }) {
   return (
     <>
-      <span className={`tag ${tagColor}`}>{tag}</span>
-      {Icon && <div className="icon-block"><Icon /></div>}
+      {tag && <p className="entry-mark">{tag}</p>}
       <h1>{title}</h1>
       {lede && <p className="lede">{lede}</p>}
     </>

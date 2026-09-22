@@ -1,5 +1,4 @@
 import Layout from '../components/Layout.jsx'
-import Diagram from '../components/Diagram.jsx'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../context/LanguageContext.jsx'
 
@@ -81,65 +80,69 @@ export default function Home() {
   return (
     <Layout>
       <div className="home-hero">
-        <span className="tag red">{lang === 'it' ? 'un quaderno di appunti, tenuto sul serio' : 'a notebook of notes, kept seriously'}</span>
-        <h1 className="huge">
-          {lang === 'it'
-            ? <>Una mappa di corrispondenze,<br/>tenuta un po' troppo bene.</>
-            : <>A map of correspondences,<br/>kept a little too carefully.</>}
-        </h1>
-
         {lang === 'it' ? (
           <>
+            <h1 className="huge">Un quaderno, non un cruscotto.</h1>
             <p className="home-lede">
-              Questo è un quaderno di lavoro, non un libro finito. Segue un unico schema ricorrente
-              attraverso un secolo di pensiero occulto e cosmologico: l'abitudine di assegnare numeri
-              alle lettere, demoni ai pianeti, gradi ai secoli, nemici alle virtù — e poi sostenere,
-              contro ogni evidenza, che l'impalcatura che ne risulta non sia decorazione ma struttura.
+              Metti che tenessi un diario — di quelli che non fai vedere a nessuno — e invece della
+              giornata ci scrivessi sopra ogni volta che noti la stessa forma tornare a galla: un numero
+              dove dovrebbe esserci un nome, un demone assegnato a un pianeta, un arcangelo messo a capo
+              di un secolo, una macchina che non hai costruito tu a imparare la tua prossima mossa prima
+              di te. Metti che continuassi a farlo per anni, dentro i diari di gente diversissima fra
+              loro nell'arco di un secolo — filosofi rinascimentali che annotano corrispondenze fra
+              metalli e virtù, un curatore viennese di Goethe che decide, attorno al 1900, che il sole ha
+              un doppio in ombra chiamato Sorat, un laboratorio del MIT che nel 2025 collega elettrodi
+              alla testa della gente per vedere cosa succede a un cervello a cui è stato affidato il
+              pensiero di un chatbot. Metti che iniziassi a sospettare che fosse tutto lo stesso diario,
+              scritto molto lentamente, da mani molto diverse, sempre sulla stessa cosa: il giudizio, e
+              cosa gli succede quando qualcos'altro si offre di portarlo al posto tuo.
             </p>
             <p className="home-lede">
-              La maggior parte delle voci qui torna, prima o poi, a un unico sistema del Novecento
-              particolarmente rigoroso — costruito da un curatore scientifico austriaco che passò un
-              decennio ad annotare Goethe prima di passare il resto della vita a mappare l'invisibile.
-              Se vuoi la versione breve di chi fosse, e perché questo quaderno si fida di lui più che
-              della maggior parte dei suoi contemporanei, parti dalla pagina sul metodo. Se preferisci
-              entrare dai singoli termini, il campo qui sotto non ha un punto segnato "inizia da qui" —
-              è voluto.
+              Questo è quello. Non un sistema a cui credere — un pattern che continuava a ripresentarsi
+              finché non è sembrato valesse la pena scriverlo per bene, fonti comprese, perché il momento
+              in cui lasci che una cosa così resti non documentata è il momento in cui diventa solo una
+              sensazione, e le sensazioni sono esattamente ciò che viene delegato per primo.
             </p>
             <p className="home-lede">
-              Non è un progetto collettivo, non ha un comitato editoriale, e non ha bisogno di scusarsi
-              per questo: è un quaderno tenuto con cura ossessiva da chi lo scrive, pubblicato così com'è
-              perché regge da solo, voce per voce, fonte per fonte. Quello che vedi oggi è la prima
-              versione seria. Non sarà l'ultima.
+              Quello che segue non è un indice nel senso tradizionale. Sono le voci di questo diario, una
+              dopo l'altra, raggruppate solo per non farti perdere — ma leggile nell'ordine che vuoi, o
+              non leggerle in ordine affatto. Il filo non è nella sequenza. È nel fatto che, presa da
+              qualunque angolo, la storia torna sempre sullo stesso punto.
             </p>
           </>
         ) : (
           <>
+            <h1 className="huge">A notebook, not a dashboard.</h1>
             <p className="home-lede">
-              This is a working notebook, not a finished book. It tracks one recurring pattern across a
-              hundred years of occult and cosmological thinking: the habit of assigning numbers to letters,
-              demons to planets, ranks to centuries, and enemies to virtues — and then insisting, against
-              all odds, that the resulting scaffolding is not decoration but structure.
+              Say you kept a diary — the kind you don't show anyone — and instead of your day, you wrote
+              down every time you noticed the same shape resurface: a number where a name should be, a
+              demon assigned to a planet, an archangel put in charge of a century, a machine you didn't
+              build learning your next move before you did. Say you kept doing that for years, across the
+              diaries of very different people over the span of a century — Renaissance philosophers
+              scribbling correspondences between metals and virtues, a Viennese editor of Goethe deciding,
+              around 1900, that the sun has a shadow-double called Sorat, an MIT lab in 2025 wiring
+              electrodes to people's heads to watch what happens to a brain that's just handed its
+              thinking over to a chatbot. Say you started to suspect it was all the same diary, written
+              very slowly, by very different hands, always about the same thing: judgment, and what
+              happens to it when something else offers to carry it for you.
             </p>
             <p className="home-lede">
-              Most of the entries here circle back, sooner or later, to one especially thorough twentieth-century
-              system — built by an Austrian scientific editor who spent a decade annotating Goethe before he
-              spent the rest of his life mapping the invisible. If you want the short version of who that was
-              and why this notebook trusts him more than it trusts most of his peers, start with the method page.
-              If you'd rather wander in through the terms themselves, the field below has no entry point marked
-              "start here" — that's deliberate.
+              That's this. Not a system to believe in — a pattern that kept resurfacing until it seemed
+              worth writing down properly, sources included, because the moment you let something like
+              this go undocumented is the moment it becomes just a feeling, and feelings are exactly what
+              gets outsourced first.
             </p>
             <p className="home-lede">
-              This isn't a committee project and it doesn't have an editorial board, and it doesn't need to
-              apologize for that: it's a notebook kept with obsessive care by whoever writes it, published
-              as it stands because it holds up on its own, entry by entry, source by source. What you're
-              reading is the first serious pass. It won't be the last.
+              What follows isn't an index in the usual sense. These are this diary's entries, one after
+              another, grouped only so you don't get lost — but read them in whatever order you want, or
+              don't read them in order at all. The thread isn't in the sequence. It's in the fact that,
+              taken from any angle, the story keeps landing on the same point.
             </p>
           </>
         )}
       </div>
 
       <div className="thesis-block">
-        <span className="tag yellow">{lang === 'it' ? 'la tesi, in una riga' : 'the thesis, in one line'}</span>
         <p className="thesis-line">
           {lang === 'it'
             ? 'Il rischio non è mai stata una macchina capace di pensare. È stata una specie che ha smesso di averne bisogno.'
@@ -147,21 +150,12 @@ export default function Home() {
         </p>
         <p className="thesis-sub">
           {lang === 'it' ? (
-            <>È la scommessa che questo quaderno continua a mettere alla prova nel presente — vedi <Link to="/present-tense">Sorat come lente</Link>.</>
+            <>Ci torniamo da ogni angolo possibile — comincia da <Link to="/present-tense">Sorat come lente</Link>, se vuoi il punto più diretto.</>
           ) : (
-            <>That's the bet this notebook keeps testing against the present — see <Link to="/present-tense">Sorat as a Lens</Link>.</>
+            <>We come back to it from every possible angle — start with <Link to="/present-tense">Sorat as a Lens</Link> if you want the most direct version.</>
           )}
         </p>
       </div>
-
-      <div className="stat-row">
-        <div className="stat"><div className="n">7</div><div className="l">{lang === 'it' ? 'sezioni, 30 voci in totale' : 'sections, 30 entries total'}</div></div>
-        <div className="stat"><div className="n">60+</div><div className="l">{lang === 'it' ? 'fonti, citate pagina per pagina — vedi la bibliografia' : 'sources, cited page by page — see bibliography'}</div></div>
-        <div className="stat"><div className="n">2</div><div className="l">{lang === 'it' ? 'livelli, mai mescolati: la dottrina di Steiner tenuta separata dalla ricezione successiva' : "tiers, never mixed: Steiner's own doctrine, kept apart from later reception and outside comparison"}</div></div>
-        <div className="stat"><div className="n">4</div><div className="l">{lang === 'it' ? 'voci che applicano il modello direttamente a IA, attenzione e feed algoritmici' : 'entries applying the framework directly to AI, attention, and algorithmic feeds'}</div></div>
-      </div>
-
-      <Diagram />
 
       {GROUPS.map((g, gi) => (
         <div className="group" key={g.title.en}>
